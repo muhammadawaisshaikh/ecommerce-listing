@@ -1,2 +1,3 @@
-# ecommerce-listing
-e-commerce listing app built using angular with ❤️🚀 and deployed with github-pages
+# EcommerceListing
+
+## e-commerce listing PWA app built using Angular (12.0.5) with ❤️ 🚀 and deployed with github-pages.

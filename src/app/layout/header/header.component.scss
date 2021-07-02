@@ -1,6 +1,7 @@
 @import '../../../assets/scss/colors';
 
 header {
+    background-color: white;
     height: 55px;
     box-shadow: 1px 1px 10px #f1f1f1;
     .logo {
@@ -16,5 +17,8 @@ header {
             right: 10px;
             color: #969696;
         }
+    }
+    .fa-shopping-cart {
+        color: $red-c;
     }
 }

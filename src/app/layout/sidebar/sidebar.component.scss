@@ -1,0 +1,27 @@
+@import '../../../assets/scss/colors';
+
+.sidebar {
+    background-color: white;
+    height: 100vh;
+    h6 {
+        padding: 10px;
+        color: $dark-c;
+    }
+    ul {
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            padding: 5px 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover {
+                background-color: black;
+                background: #f9f9f9;
+                color: $red-c;
+                font-weight: 500;
+            }
+        }
+    }
+}

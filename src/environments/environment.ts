@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  access_key: 'f0f0682a-20db-4c63-aa12-d9214a0c5203',
+  base_url: 'https://storeapi.airliftgrocer.com/v2'
 };
 
 /*

@@ -1,1 +1,30 @@
-<p>product-listing works!</p>
+<div class="listing">
+    <div class="head">
+        <h5>
+            <strong>{{selectedCategory.name}}</strong>
+        </h5>
+    </div>
+
+    <div class="list-items pt-4">
+        <div class="row">
+            <div class="col-3" *ngFor="let product of data">
+                <div class="custom-card">
+                    <div class="image">
+                        <img src="{{product.default.image.src}}" alt="{{product.default.image.alt}}" />
+                    </div>
+                    <h6 *ngIf="!product.default.on_sale" class="pb-2"><strong>Rs. {{product.default.price}}</strong></h6>
+                    <h6 *ngIf="product.default.on_sale" class="pb-2 d-flex justify-content-between">
+                        <strong>Rs. {{product.default.sale_price}}</strong>
+                        <span class="fw-lighter text-decoration-line-through text-black-50">Rs. {{product.default.regular_price}}</span>
+                    </h6>
+                    <span class="badge rounded-pill bg-warning text-dark">
+                        <i class="fas fa-hand-holding-usd pe-2"></i>
+                        {{product.default.rewards_point}}
+                    </span>
+                    <p class="name">{{product.default.name}}</p>
+                    <button type="button" class="btn btn-outline-danger w-100">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

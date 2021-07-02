@@ -13,11 +13,17 @@ const routes: Routes = [
   {
     path: 'products',
     loadChildren: () => import('./components/products/products.module').then(m => m.ProductsModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./components/products/products.module').then(m => m.ProductsModule)
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { useHash: true })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

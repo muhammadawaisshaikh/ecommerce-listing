@@ -29,7 +29,9 @@ export class ProductListingComponent implements OnInit {
   getProducts() {
     this.productsService.getProducts(this.selectedCategory.slug, 25, 1).subscribe(res => {
       this.data = res;
-      console.log(res);
+    },
+    (error) => {
+      alert(error.message);
     })
   }
 

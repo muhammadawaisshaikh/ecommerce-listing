@@ -21,8 +21,8 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
     setTimeout(() => {
-      this.selectCategory(this.categories[0])
-    }, 1000);
+      this.selectCategory(this.categories[0]);
+    }, 500);
   }
 
   selectCategory(item: any) {
